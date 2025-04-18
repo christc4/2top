@@ -1,0 +1,11 @@
+#!/bin/sh
+
+window_id=$(xwininfo -root -tree | grep -Ei '(^|[^a-zA-Z])st([^a-zA-Z]|$)' | awk '{print $1}')
+
+# Check if we found any window
+if [ -n "$window_id" ]; then
+  # Raise the window using totop
+  totop "$window_id"
+else
+  echo "No window with name 'st' found."
+fi
