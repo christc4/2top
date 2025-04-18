@@ -1,6 +1,6 @@
 # 2top
 
-Provided is my Go rewrite
+Provided is my Go rewrite, stup and brup are example scripts to raise 'st' and 'chromium' make these bindable
 
 To compile run c++ totop.cpp -L/usr/X11R6/lib -lX11 -o totop
 
